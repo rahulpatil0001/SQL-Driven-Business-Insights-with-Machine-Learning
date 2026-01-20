@@ -90,55 +90,55 @@ CREATE TABLE category_translation (
 
 --customer_csv--
 COPY CUSTOMERS
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_customers_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --geolocation--
 COPY geolocation
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_geolocation_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --orders items--
 COPY order_items
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_order_items_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --payment--
 COPY payments
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_order_payments_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --review--
 COPY reviews
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_order_reviews_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --orders--
 COPY orders
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_orders_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --product--
 COPY products
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_products_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --seller--
 COPY sellers
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\olist_sellers_dataset.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
 --category translation--
 COPY category_translation
-FROM 'C:\Users\Rahul Patil\OneDrive\Desktop\olist_data\product_category_name_translation.csv'
+FROM '--'
 DELIMITER ','
 CSV HEADER;
 
@@ -220,6 +220,7 @@ SELECT
     ) AS avg_delivery_time
 FROM orders o
 WHERE o.order_status = 'delivered';
+
 
 
 
